@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<title>Login Page</title>
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+	<link rel="stylesheet" href="index.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.serialize-object.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	
 </head>
 <body>
 
-<script>
-$.ajax({
-	url:"rest/test",
-	success: function(data){
-		alert(data);
-	}
-});
-</script>
+	<div class="w3-container">
+		<form id="loginForm">
+		<h2>Please sign in</h2>
+			<input type="text" placeholder="Username" class="w3-input w3-border" name="username">
+			<br>
+			<input type="text" placeholder="Password" class="w3-input w3-border" name="password">
+			<br>
+			<input type="submit" value="Login" class="w3-input w3-border w3-blue" id="btn">
+		</form>
+	</div>
+
+
 </body>
 </html>

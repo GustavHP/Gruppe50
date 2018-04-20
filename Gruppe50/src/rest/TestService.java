@@ -2,14 +2,18 @@ package rest;
 
 import java.io.UnsupportedEncodingException;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.core.MediaType;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
+
+import Classes.User;
 
 
 
@@ -67,9 +71,20 @@ public class TestService {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
 		return "";
+	}
+	
+	@Path("login")
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	public String login(User u) {
+		
+		if (u.getUsername().equals("Niklas")) {
+			return "Dit navn er Niklas og dit password er: " + u.getPassword();
+		}
+		else {
+			return "Kender ikke dig";
+		}
 	}
 	
 
