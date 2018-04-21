@@ -1,11 +1,11 @@
 package Classes;
 
-public class User {
+public class UserDTO {
 
 	private String username;
 	private String password;
 	
-	public User() {
+	public UserDTO() {
 		
 	}
 
