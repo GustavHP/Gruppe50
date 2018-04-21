@@ -18,28 +18,11 @@ $(document).ready(function() {
 			method: 'POST',
 			success: function(resp){
 				alert(resp);
-				window.location.replace("http://localhost:8080/Gruppe50/DineTing.html");
-				//Giv token...
-				//Skift html side...
+					window.location.replace("http://localhost:8080/Gruppe50/DineTing.html");
 			},
 			error: function(resp){
 				alert("Fejl: " + resp);
 			}
 		}) 
-		
-		//Det nedenunder virkede...
-		/*
-		$.ajax({
-			url: "rest/test",
-			method: "GET",
-			success: function(result) {
-				alert(result);
-			},
-			error: function(result) {
-				alert(result);
-			}
-		}) */
-		
 	});
-	
 });
