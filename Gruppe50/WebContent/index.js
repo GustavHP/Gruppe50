@@ -18,6 +18,9 @@ $(document).ready(function() {
 			method: 'POST',
 			success: function(resp){
 				alert(resp);
+				window.location.replace("http://localhost:8080/Gruppe50/DineTing.html");
+				//Giv token...
+				//Skift html side...
 			},
 			error: function(resp){
 				alert("Fejl: " + resp);

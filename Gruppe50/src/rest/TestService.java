@@ -23,6 +23,8 @@ public class TestService {
 	@Consumes(MediaType.APPLICATION_JSON)
 	public String login(User u) {
 		
+		//Indsæt DAO del
+		
 		if (u.getUsername().equals("Niklas")) {
 			return "Dit navn er Niklas og dit password er: " + u.getPassword();
 		}
