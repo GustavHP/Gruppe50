@@ -22,7 +22,21 @@ $(document).ready(function() {
 			error: function(resp){
 				alert("Fejl: " + resp);
 			}
-		})
+		}) 
+		
+		//Det nedenunder virkede...
+		/*
+		$.ajax({
+			url: "rest/test",
+			method: "GET",
+			success: function(result) {
+				alert(result);
+			},
+			error: function(result) {
+				alert(result);
+			}
+		}) */
+		
 	});
 	
 });
